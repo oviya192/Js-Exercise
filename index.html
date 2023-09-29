@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="shortcut icon" href="js.png">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <main>
+    <div class="container">
+        <h1>JAVASCRIPT</h1>
+        <div class="contents">
+            <h1>Javascript Strings</h1>
+            <div>
+            <h1>String Length</h1>
+            <p>The length property returns the length of a string:</p>
+            <p>Enter any string : <input type="text" class="myText" id="length"></p>
+            <button type="button" onclick="lengthFunction()">Click here</button>
+            <p id="demo"></p>
+           </div>
+
+            <div>
+                <h1>String replace</h1>
+                <p>The replace() method replaces a specified value with another value in a string:</p>
+                <p>Enter a String:</p><input type="text" class="myText" id="replace">
+                <button type="button" onclick="replaceFunction()">Click here</button>
+                <p id="demo1"></p>
+
+            </div>
+
+            <div>
+                <h1>String Uppercase</h1>
+                <p>A string is converted to upper case with toUpperCase():</p>
+                <p>Enter a String:</p><input type="text" class="myText" id="fname">
+                <button type="button" onclick="uppercaseFunction()">Click here</button>
+                <p id="demo2"></p>
+
+            </div>
+            <div>
+                <h1>String Lowercase</h1>
+                <p>A string is converted to upper case with toLowerCase():</p>
+                <p>Enter a String:</p><input type="text" class="myText" id="sname">
+                <button type="button" onclick="lowercaseFunction()">Click here</button>
+                 <p id="demo3"></p>
+
+            </div>
+             <div>
+                <h1>String Concatenate</h1>
+                <p>concat() joins two or more strings:</p>
+                <p>Enter any string : </p>
+                <div class="concate">
+                    <p>String 1:<input class="myText" id="firstname"></p>
+                    <p>String 2:<input class="myText" id="secondname"></p>
+                    <button onclick="concate()">Click here</button>
+                </div>
+                <p id="demo4">Result:</p>  
+                   
+            </div>
+            <div>
+                <h1>String Trim</h1>
+                <p>The trim() method removes whitespace from both sides of a string:</p>
+                <input type="text" class="myText" id="ftname">
+                <button onclick="trim()">Click here</button>
+                <p id="demo5"></p>
+            </div>
+
+            <div>
+                <h1>String Split</h1>
+                <p>A string can be converted to an array with the split() method:</p>
+                <input type="text" class="myText" id="name1">
+                    <button onclick="split()">Click here</button>
+                    <p id="demo6"></p>
+            </div>
+        </div>
+            <!-------------------------------------String ends----------------------------------------->
+
+
+            <!-- -----------------------------------Array starts---------------------------------------->
+        <div class="contents2">
+                <div>
+                    <h1>Arithmetic Operators</h1>                  
+                    <div class="operators">
+                    <form name="my_cal">
+                        Number 1: <input type="text" class="myText" name="first" id="first">                       
+                        <br>
+                        Number 2: <input type="text" class="myText" name="second">
+                        <br><br>
+                    
+                        <input type="button" class="myText" value="ADD" onclick="addition();">
+                        <input type="button" value="SUB" class="myText" onclick="subtraction();">
+                        <input type="button" value="MUL" class="myText" onclick="multiply();">
+                        <input type="button" value="DIV" class="myText" onclick="division();">
+                        <input type="button" value="MOD" class="myText" onclick="modulus();">
+                       
+                     <br><br>
+                    
+                        Get Result: <input type="text" name="total" class="myText" id="total">
+                    </form>
+                    </div>
+                </div>
+
+                <div>
+                    <h1>If</h1>
+                    <p>If condition checks whether the person is Major:</p>
+                    <input class="myText" id="text_a2" type="text" />
+                    <button onclick="ifFunction()">Check</button>
+                    <p id="answer"></p>
+                </div>
+
+                <div>
+                    <h1>If else</h1>
+                    <p>If else condition checks whether the pin number is valid or invalid:</p>
+                    <input class="myText" id="text_a1" type="text" />
+                    <button onclick="ifelseFunction()">Check</button>
+                    <p id="answer1"></p>
+                </div>
+
+                <div>
+                    <h1>If elseif</h1>
+                    <p>If elseif condition checks the grade of the Student:</p>
+                    <input class="myText" id="text_a3" type="text"/>
+                    <button onclick="ifelseifFunction()">Check</button>
+                    <p id="answer2"></p>
+                </div>
+
+                <div>
+                    <h1>Switch case</h1>
+                    <p>Switch condition checks the weekend count:</p>
+                    <p>Is there weekend is so far from today</p>
+                    <button onclick="switchFunction()">Check</button>
+                    <p id="answer3"></p>
+                </div>
+
+                <div>
+                    <h1>Comparison Equal to</h1>
+                    <p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
+                    <p>Enter a number: <input class="myText" id="text_a4" type="text"/></p>
+                    <p>Enter a number: <input class="myText" id="text_a5" type="text"/></p>
+                    <button onclick="compequal()">Check</button>
+                    <p id="answer4"></p>
+                </div>
+
+                <div>
+                    <h1>Comparison triple Equal to</h1>
+                    <p>=== means,if both operation must be of same data type with same values</p>
+                    <p>Enter a number: <input class="myText" id="text_a6" type="text"/></p>
+                    <p>Enter a number: <input class="myText" id="text_a7" type="text"/></p>
+                    <button onclick="comptriple()">Check</button>
+                    <p id="answer5"></p>
+                </div>
+
+                <div>
+                    <h1>Comparison Not Equal to</h1>
+                   <p>If the value is not equal it displays false</p>
+                    <p>Enter a number: <input class="myText" id="text_a8" type="text"/></p>
+                    <p>Enter a number: <input class="myText" id="text_a9" type="text"/></p>
+                    <button onclick="compnotequal()">Check</button>
+                    <p id="answer6"></p>
+                </div>
+
+                <div>
+                    <h1>Comparison Greater than</h1>
+                    <p>If x is greater than y it displays true otherwise displays false</p>
+                    <!-- <p>=== means,if both operation must be of same data type with same values</p> -->
+                    <p>Enter a number: <input class="myText" id="text_a10" type="text"/></p>
+                    <p>Enter a number: <input class="myText" id="text_a11" type="text"/></p>
+                    <button onclick="compgreaterthan()">Check</button>
+                    <p id="answer7"></p>
+                </div>
+
+                <div>
+                    <h1>Comparison Less than</h1>
+                    <p>If x is less than y it displays true otherwise displays false</p>
+                    <!-- <p>=== means,if both operation must be of same data type with same values</p> -->
+                    <p>Enter a number: <input class="myText" id="text_a12" type="text"/></p>
+                    <p>Enter a number: <input class="myText" id="text_a13" type="text"/></p>
+                    <button onclick="complessthan()">Check</button>
+                    <p id="answer8"></p>
+                </div>
+
+                <div>
+                    <h1>Comparison Greater than or Equal to</h1>
+                    <p>If x is greater than or equal to y it displays true otherwise displays false</p>
+                    <!-- <p>=== means,if both operation must be of same data type with same values</p> -->
+                    <p>Enter a number: <input class="myText" id="text_a14" type="text"/></p>
+                    <p>Enter a number: <input class="myText" id="text_a15" type="text"/></p>
+                    <button onclick="compgreaterorequal()">Check</button>
+                    <p id="answer9"></p>
+                </div>
+
+                <div>
+                    <h1>Comparison Lesser than or equal to </h1>
+                    <p>If x is less than or equal to y it displays true otherwise displays false</p>
+                    <!-- <p>=== means,if both operation must be of same data type with same values</p> -->
+                    <p>Enter a number: <input class="myText" id="text_a16" type="text"/></p>
+                    <p>Enter a number: <input class="myText" id="text_a17" type="text"/></p>
+                    <button onclick="complessorequal()">Check</button>
+                    <p id="answer10"></p>
+                </div>
+
+            </div>
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
